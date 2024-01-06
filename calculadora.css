@@ -1,0 +1,223 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffe0e9;
+}
+
+.container{
+    text-align: center;
+    background-color: #ffafd2;
+    padding: 40px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+input {
+
+    padding: 10px 15px;
+    border-radius: 10px;
+    /*  en CSS se utiliza para eliminar el contorno que aparece por defecto al enfocar un elemento HTML mediante un clic  */
+    outline: none;
+}
+
+.boton{
+
+    background-color: #ff6b95;
+    color:white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover{
+    background-color: #ff3c6e;
+}
+
+#resultado{
+    font-size:24px;
+    margin-top:20px ;
+}
+
+ /* corazon */
+
+  .heart{
+    position:relative;
+    top: 74px;
+    left: 220px;
+    width:70px;
+    height:70px;
+    background-color:#ff4757;
+    transform: rotate(-45deg);
+    box-shadow:-10px 10px 90px #ff4757;
+    animation: animate .6s linear infinite;
+    display: none;
+  }
+
+
+  @keyframes animate {
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+  }
+
+  .heart::before{
+    content:'';
+    position: absolute;
+    right: 0.5px;
+    top: -50%;
+    width:70px;
+    height:70px;
+    background:#ff4757;
+    border-radius:50% ;
+    box-shadow:-10px 10px 90px #ff4757;
+  }
+
+  .heart::after{
+    content:'';
+    position: absolute;
+    left: 36px;
+    top: -0px;
+    width:70px;
+    height: 70px;
+    background-color:#ff4757;
+    border-radius:50% ;
+    box-shadow:-10px 10px 90px #ff4757;
+  }
+
+   img{
+    display: none;
+    width:130px;
+    height:130px;
+    margin: 0 auto;
+    margin-top: 10px;
+   }
+
+/* Media Query para pantallas con un ancho máximo de 600px */
+@media screen and (max-width: 627px) {
+    
+    .heart{
+        top: 38px;
+        left: 220px;
+        width:70px;
+       
+      }
+  }
+
+
+  @media screen and (max-width: 560px) {
+    
+    .heart{
+        top: 38px;
+        left: 200px;
+        width:70px;
+       
+      }
+  }
+
+  @media screen and (max-width: 512px) {
+    
+    .heart{
+        top: 38px;
+        left: 175px;
+        width:70px;
+       
+      }
+  }
+
+  @media screen and (max-width: 508px) {
+    
+
+    input {
+        display: block;
+        margin: 2px auto;
+        padding: 10px 25px;
+        border-radius: 10px;
+        /*  en CSS se utiliza para eliminar el contorno que aparece por defecto al enfocar un elemento HTML mediante un clic  */
+        outline: none;
+    }
+    .heart{
+        top: 38px;
+        left: 140px;
+        width:70px;
+       
+      }
+
+      .container{
+        height: 340px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    
+    .container{
+        height: 360px;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+    
+    .container{
+        height: 408px;
+    }
+
+    .heart{
+        top: 38px;
+        left: 130px;
+        width:70px;
+       
+      }
+  }
+
+  @media screen and (max-width: 391px) {
+    
+    .heart{
+        top: 38px;
+        left: 112px;
+        width:70px;
+       
+      }
+  }
+
+  @media screen and (max-width: 376px) {
+    
+    .heart{
+        top: 38px;
+        left: 110px;
+        width:70px;
+       
+      }
+  }
+
+  @media screen and (max-width: 332px) {
+    
+    .heart{
+        top: 38px;
+        left: 90px;
+        width:70px;
+       
+      }
+  }
+
+  @media screen and (max-width: 300px) {
+    
+    .heart{
+        top: 38px;
+        left: 80px;
+        width:70px;
+       
+      }
+  }
+ 
+ 
