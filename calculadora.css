@@ -115,11 +115,22 @@ input {
       }
   }
 
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 588px) {
     
     .heart{
         top: 38px;
-        left: 200px;
+        left: 205px;
+        width:70px;
+       
+      }
+  }
+
+
+  @media screen and (max-width: 571px) {
+    
+    .heart{
+        top: 38px;
+        left: 192px;
         width:70px;
        
       }
@@ -130,6 +141,16 @@ input {
     .heart{
         top: 38px;
         left: 190px;
+        width:70px;
+       
+      }
+  }
+
+  @media screen and (max-width: 530px) {
+    
+    .heart{
+        top: 38px;
+        left: 180px;
         width:70px;
        
       }
