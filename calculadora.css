@@ -115,12 +115,21 @@ input {
       }
   }
 
+  @media screen and (max-width: 570px) {
+    
+    .heart{
+        top: 38px;
+        left: 200px;
+        width:70px;
+       
+      }
+  }
 
   @media screen and (max-width: 560px) {
     
     .heart{
         top: 38px;
-        left: 200px;
+        left: 190px;
         width:70px;
        
       }
