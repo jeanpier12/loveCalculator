@@ -1,5 +1,4 @@
-
-document.addEventListener('DOMContentLoaded', function() {
+document.getElementById('reproducirBtn').addEventListener('click', function() {
   var fileUrl = "/Islabonita.mp3";
   var audio = new Audio(fileUrl);
   audio.loop = true;
