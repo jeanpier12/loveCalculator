@@ -1,3 +1,13 @@
+
+document.addEventListener('DOMContentLoaded', function() {
+  var fileUrl = "/Islabonita.mp3";
+  var audio = new Audio(fileUrl);
+  audio.loop = true;
+  audio.volume = 0.5;
+  audio.play();
+});
+
+
 function calculateLove(){
         const name1=document.getElementById("name1").value;
         const name2=document.getElementById("name2").value;

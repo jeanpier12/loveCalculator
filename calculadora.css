@@ -14,7 +14,24 @@ body{
     height: 300px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border : solid 5px rgb(255, 255, 255);
+    animation-name: AnimacionBordeMulticolor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
+@keyframes AnimacionBordeMulticolor{
+  20%{
+    border : solid 5px rgb(255, 0, 212);
+  }
+  40%{
+    border : solid 5px white;
+  }
+ 
+  90%{
+    border : solid 5px rgb(255, 0, 212);
+  }
 }
 
 input {
@@ -185,14 +202,14 @@ input {
       }
 
       .container{
-        height: 340px;
+        height: 360px;
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 456px) {
     
     .container{
-        height: 360px;
+        height: 400px;
     }
   }
 
@@ -209,6 +226,26 @@ input {
        
       }
   }
+
+  @media screen and (max-width: 406px) {
+    
+    .heart{
+        top: 38px;
+        left: 115px;
+        width:70px;
+       
+      }
+  }
+  @media screen and (max-width: 396px) {
+    
+    .heart{
+        top: 38px;
+        left: 115px;
+        width:70px;
+       
+      }
+  }
+
 
   @media screen and (max-width: 391px) {
     
@@ -229,6 +266,36 @@ input {
        
       }
   }
+  @media screen and (max-width: 366px) {
+    
+    .heart{
+        top: 38px;
+        left: 97px;
+        width:70px;
+       
+      }
+  }
+
+  
+  @media screen and (max-width: 360px) {
+    
+    .heart{
+        top: 38px;
+        left: 96px;
+        width:70px;
+       
+      }
+  }
+
+  @media screen and (max-width: 336px) {
+    
+    .heart{
+        top: 38px;
+        left: 80px;
+        width:70px;
+       
+      }
+  }
 
   @media screen and (max-width: 332px) {
     
@@ -240,6 +307,16 @@ input {
       }
   }
 
+
+  @media screen and (max-width: 312px) {
+    
+    .heart{
+        top: 38px;
+        left: 82px;
+        width:70px;
+       
+      }
+  }
   @media screen and (max-width: 300px) {
     
     .heart{
