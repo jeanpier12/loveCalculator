@@ -1,5 +1,5 @@
 document.getElementById('reproducirBtn').addEventListener('click', function() {
-  var fileUrl = "/Islabonita.mp3";
+  var fileUrl = "Islabonita.mp3";
   var audio = new Audio(fileUrl);
   audio.loop = true;
   audio.volume = 0.5;
